@@ -285,4 +285,19 @@ Changes      : lose variables "dlnvp", "dlnvs", "vp", "vs", "xi", rename variabl
 52. GAP\_P4\_dvp.nc\
 Paper        : [Obayashi et al., 2013] https://doi.org/10.1002/2013GL057401 [Fukao and Obayashi, 2013] https://doi.org/10.1002/2013JB010466 \
 Download link: http://www.godac.jamstec.go.jp/catalog/data_catalog/metadataDisp/GAP_P4?lang=en \
-Changes      : created GAP_P4.01 ~ GAP_P4.29, then doubled the depth layer. For example: 29 and 50.999 km get values from GAP_P4.01
+Changes      : create .nc file with Python 3 script. take midpoint of depth layers in source README as depths for each layer rather than layer boundaries. In this file, "v" refers to "dvp".
+
+53. OJP\_P\_dvp.nc\
+Paper        : [Obayashi et al., 2021] https://doi.org/10.1038/s41598-021-99833-5 \
+Download link: Personal communication
+Changes      : create .nc file with Python 3 script. take midpoint of depth layers in source README as depths for each layer rather than layer boundaries. In this file, "v" refers to "dvp".
+
+54. TX2019slab\_dvp.nc\
+Paper        : [Lu et al., 2019] https://doi.org/10.1029/2019JB017448 \
+Download link: https://ds.iris.edu/ds/products/emc-tx2019slab \
+Changes      : separated dvp and dvs and converted to a -180 to 180 format for consistency. Rename variable from "dvp" to "v".
+
+55. TX2019slab\_dvs.nc\
+Paper        : [Lu et al., 2019] https://doi.org/10.1029/2019JB017448 \
+Download link: https://ds.iris.edu/ds/products/emc-tx2019slab \
+Changes      : separated dvp and dvs and converted to a -180 to 180 format for consistency. Rename variable from "dvs" to "v".
